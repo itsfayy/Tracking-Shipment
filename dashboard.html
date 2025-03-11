@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking Shipments</title>
+    <style>
+        table{
+            border-collapse:collapse;
+            width:100%;
+            margin-top:10px;
+        }
+        th,td{
+            padding:15px;
+            border:2px solid black;
+            text-align:center;
+        }
+       th{
+        background-color:f4f4f4;
+       }
+       .delayed{
+        background-color:ffcccc;
+        color:red;
+       }
+    </style>
+</head>
+<body>
+    <h1>Dashboard Tracking Shipment</h1>
+    <table>
+        <thead>
+    <tr>
+        <th>Shipment Id</th>
+        <th>Destination</th>
+        <th>Status</th>
+        <th>Estimated Delivery Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>KV3490</td>
+            <td>Kiambu, Kikuyu</td>
+            <td> Delivered</td>
+            <td>14th March 4.00pm</td>
+        </tr>
+        <tr>
+            <td>KV3485</td>
+            <td>Nairobi, Upperhill</td>
+            <td> In Transit</td>
+            <td>24th March 6.00pm</td>
+        </tr>
+        <tr class="delayed">
+            <td>KV3480</td>
+            <td>Mombasa, Kilifi</td>
+            <td> Pending</td>
+            <td>26th March 4.00pm</td>
+        </tr>
+        <tr>
+            <td>KV3492</td>
+            <td>Kikuyu, Thogoto</td>
+            <td>Delayed</td>
+            <td>18th March 11.00am</td>
+        </tr>
+        <tr class="delayed">
+            <td>KV3495</td>
+            <td>Kikuyu,Kinoo</td>
+            <td>Pending</td>
+            <td>30th March 12.00pm</td>
+        </tr>
+        <tr>
+            <td>KV3482</td>
+            <td>Thika road, Pangani</td>
+            <td>In Transit</td>
+            <td>16th March 4.30pm</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Total Shipments: 6</td>
+        </tr>
+    </tfoot>
+
+</table>
+</body>
+</html>
